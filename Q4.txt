@@ -1,0 +1,29 @@
+Q-4, part a
+
+Four different modes (excluding read and write) used with open() in Python:
+'a' – Append mode: Opens a file for writing, appending content at the end if the file exists.
+'x' – Exclusive creation mode: Creates a new file and throws an error if the file already exists.
+'b' – Binary mode: Opens the file in binary format (used for images, PDFs, etc.).
+'t' – Text mode: Opens the file in text mode (default mode). 
+
+part b 
+Why readlines() is inefficient for large files:
+readlines() reads the entire file into memory as a list, which can cause memory issues for very large files.
+More efficient method:
+Use a loop to read the file line by line:
+with open("file.txt") as f:
+    for line in f:
+        # read the line
+
+part c 
+why is it important to close files:
+If files are not closed, it can lead to memory leaks, file corruption, or too many open file handles, which can crash programs.        
+
+How with ensures proper resource management:
+The with statement automatically closes the file after its block is executed, even when an error occurs. 
+Example:
+with open("data.txt", "r") as file:
+    content = file.read()
+# file is automatically closed here
+
+

@@ -1,0 +1,35 @@
+part a 
+
+var: It is function-scoped or globally-scoped. Can be re-declared and updated.
+let: It is flock-scoped. Can be updated but not re-declared in the same scope.
+const: It is flock-scoped. Cannot be updated or re-declared. Must be initialized during declaration.
+
+Example: 
+function test() {
+  var x = 1;      // var is function-scoped
+  let y = 2;      // let is block-scoped
+  const z = 3;    // const is also block-scoped and can't be changed
+
+  // Reassigning values
+  x = 10;         //var can be reassigned
+  y = 20;         //let can be reassigned
+  // z = 30;      //Error: const can't be reassigned
+
+  // Redeclaring
+  var x = 100;    //var can be redeclared in the same scope
+  // let y = 200; // Error: let can't be redeclared in the same scope
+  // const z = 300; //Error: const can't be redeclared either
+
+  console.log("x =", x); // 100
+  console.log("y =", y); // 20
+  console.log("z =", z); // 3
+}
+test();
+-------------------------------------------------------------------------------------------------------
+part b
+
+blank 1: addEventListener
+blank 2: style
+blank 3: backgroundColor
+
+---------------------------------------------------------------------------------------------------------------

@@ -1,0 +1,5 @@
+// MongoDB Query to find an employee named "John Doe" and increase their salary by 10,000
+db.employees.updateOne(
+  { name: "John Doe" },
+  { $inc: { salary: 10000 } }
+);

@@ -1,0 +1,5 @@
+//MongoDB Aggregation Query to calculate the total revenue from orders with status "delivered"
+db.orders.aggregate([
+  { $match: { status: "delivered" } },
+  { $group: { _id: null, total_revenue: { $sum: "$total_price" } } }
+]);

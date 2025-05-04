@@ -1,0 +1,14 @@
+part a
+ The push into the git will be rejected by Git because the local branch is behind the the remote branch.
+ To resolve this, use git pull command which will try to merge the changes made by you and the changes made by my teammate. 
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
+part b 
+just after making changes to 15 files, and directly doing git commit will not have any effect as we must have forgotten doing git add before git commit. 
+due to this, the files will not be staged and git commit is empty effecively. 
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
+part c 
+git checkout testing 
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
+part d 
+git reset --soft HEAD~1
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
